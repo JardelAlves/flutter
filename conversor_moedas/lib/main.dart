@@ -1,12 +1,17 @@
-import 'package:first_challenge/main_page.dart';
 import 'package:flutter/material.dart';
+
+import 'app/views/home_view.dart';
+
+main() {
+  runApp(AppWidget());
+}
 
 class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark(),
-      home: MainPage(),
+      home: HomeView(),
     );
   }
 }
